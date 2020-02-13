@@ -1,0 +1,3 @@
+bazel test -c opt -k --test_timeout 300,450,1200,3600 --crosstool_top=//build_deps/toolchains/gcc7_manylinux2010-nvcc-cuda10.1:toolchain --test_output=all --jobs=1 --cache_test_results=no //tensorflow_addons/losses:crf_test
+
+bazel test -c opt -k --test_timeout 300,450,1200,3600 --crosstool_top=//build_deps/toolchains/gcc7_manylinux2010-nvcc-cuda10.1:toolchain --test_output=all --jobs=1 --cache_test_results=no //tensorflow_addons/layers:crf_test
